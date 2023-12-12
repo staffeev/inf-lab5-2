@@ -26,7 +26,7 @@ function process_line(){
 
 function  process_file() {
 	local counter=0
-	if [[ "$1" == *"(NO_CHECK)"* ]]; then
+	if [[ "$1" == *"NO_CHECK"* ]]; then
 		return 0
 	fi
 	while read -r line || [ -n "$line" ]
